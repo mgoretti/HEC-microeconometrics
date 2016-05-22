@@ -1,0 +1,107 @@
+\subsection{Github}
+All code used for this project can be found at \\ \url{https://github.com/mgoretti/HEC-microeconometrics}
+
+\subsection{IV Probit settings}
+Due to the complexity of the model and number of observations, the iterating algorithm computing the maximum likelihood was having trouble converging (and taking way too much time to do so). I identified the problem in the criteria for the convergency of the method. It was using an absolute difference instead of a relative one (and a very high number of max iterations). In a normal setup this problem can be settled by changing the convergence criterium to be a relative change in maximum likelihood between steps of less than 0.01\% but stata doesn't accept so I had to settle for an ad-hoc criterium of having a norm the gradient of less than $10^{-3}$ which has the problem of not being scaled relatively to the maximum likelihood.
+
+\subsection{Figures}
+\begin{figure}[H]
+\makebox[\textwidth][c]{\includegraphics[width=0.6\paperwidth]{../proj/fig/obesity.eps}}
+\caption{Percentage of obese persons as a function of their depression }
+\label{fig:obesity}
+\end{figure}
+
+\begin{figure}[H]
+\makebox[\textwidth][c]{\includegraphics[width=0.6\paperwidth]{../proj/fig/cesd.eps}}
+\caption{Mean depression as a function of the BMI}
+\label{fig:cesd}
+\end{figure}
+
+
+\begin{figure}[H]
+\makebox[\textwidth][c]{\includegraphics[width=0.6\paperwidth]{../proj/fig/agecesd.eps}}
+\caption{Mean depression score as a function of the age}
+\label{fig:agecesd}
+\end{figure}
+
+
+
+\begin{figure}[H]
+\makebox[\textwidth][c]{\includegraphics[width=0.6\paperwidth]{../proj/fig/agebmi.eps}}
+\caption{Mean bmi as a function of the age}
+\label{fig:agebmi}
+\end{figure}
+
+\begin{figure}[H]
+\makebox[\textwidth][c]{\includegraphics[width=0.6\paperwidth]{../proj/fig/wavecesd.eps}}
+\caption{Mean depression score as a function of the wave}
+\label{fig:wavecesd}
+\end{figure}
+
+\begin{figure}[H]
+\makebox[\textwidth][c]{\includegraphics[width=0.6\paperwidth]{../proj/fig/wavebmi.eps}}
+\caption{Mean bmi as a function of the wave}
+\label{fig:wavebmi}
+\end{figure}
+
+
+\subsection{Tables}
+
+\subsubsection{Descriptive Analysis}
+
+\begin{figure}[H]
+\makebox[\textwidth][c]{\includegraphics[width=0.6\paperwidth]{../proj/matlab/2.pdf}}
+\caption{Visual representation of the obtained coefficients for CESD and both sexes, scaled by the proportion of the population in the category }
+\label{fig:results2}
+\end{figure}
+
+
+
+\begin{table}[H]
+\centering
+\input{../proj/regs/weightProblems}
+\caption{Regression results over the weight problems dependent variable}
+\label{tab:weightProblems}
+\end{table}
+
+\begin{table}[H]
+\centering
+\input{../proj/regs/overweight}
+\caption{Regression results over the overweight dependent variable}
+\label{tab:overweight}
+\end{table}
+
+\begin{table}[H]
+\centering
+\input{../proj/regs/obese}
+\caption{Regression results over the obese dependent variable}
+\label{tab:obese}
+\end{table}
+
+\begin{table}[H]
+\centering
+\input{../proj/regs/morbidlyObese}
+\caption{Regression results over the morbidly obese dependent variable}
+\label{tab:morbidlyObese}
+\end{table}
+
+\begin{table}[H]
+\centering
+\input{../proj/regs/wave}
+\caption{Regression explaining obesity only showing the wave control}
+\label{tab:wave}
+\end{table}
+
+\begin{table}[H]
+\centering
+\input{../proj/regs/educ}
+\caption{Regression explaining obesity only showing the education control}
+\label{tab:educ}
+\end{table}
+
+\begin{table}[H]
+\centering
+\input{../proj/regs/bias}
+\caption{Simplest obese regression}
+\label{tab:bias}
+\end{table}

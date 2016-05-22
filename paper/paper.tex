@@ -1,0 +1,110 @@
+% !TEX encoding = UTF-8 Unicode
+
+\documentclass[10pt]{article} % For LaTeX2e
+% We will use NIPS submission format
+\usepackage{graphicx}
+\usepackage{graphics}
+\usepackage{ifoddpage}
+
+\usepackage{epstopdf}
+\usepackage{nips13submit_e,times}
+% for hyperlinks
+\usepackage{hyperref}
+\usepackage{url}
+% For figures
+\usepackage{graphicx}
+\usepackage{subfigure}
+% math packages
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amsopn}
+\usepackage{ifthen}
+\usepackage{natbib}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+
+
+% tables
+\usepackage{float}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{caption}
+\usepackage{tabularx}
+
+
+%hl
+\usepackage{color,soul}
+\usepackage{soulutf8}
+
+\usepackage[top=1.25in, bottom=1.25in, left=1.25in, right=1.25in]{geometry}
+
+
+
+
+\linespread{1.5}\selectfont
+
+
+\title{ The Effect of Depression on Obesity:  \\ an instrumental variable approach }
+
+
+\author{
+Marco Goretti \\
+\texttt{marco.goretti@unil.ch}
+}
+
+
+\nipsfinalcopy
+
+
+\begin{document}
+
+\maketitle
+\thispagestyle{empty}
+
+\vspace{1cm}
+\begin{abstract}
+
+This article studies the effect of depression on obesity through the use of the spouse's depression as an instrument to correct the simultaneity bias. A strongly significant effect was found on females while a barely significant effect was found on males, excepted in the morbidly obese category where the gender does not play a role anymore.
+
+Having smoked in the past or being currently smoking greatly reduced the probability of being obese and the gender did not play a role on this effect.
+\end{abstract}
+
+\vfill
+
+\makebox[\textwidth][c]{\includegraphics[width=.2\paperwidth]{img/logo.png}}
+\begin{center}
+\url{https://github.com/mgoretti/HEC-microeconometrics}
+\end{center}
+
+\newpage
+\setcounter{page}{1}
+
+\section{Introduction}
+\input{tex/introduction}
+	
+\section{Data}
+\input{tex/data}
+
+\section{Descriptive Analysis}
+\input{tex/analysis}
+
+\section{Results}
+\input{tex/results}
+
+\vspace{-0.3cm}
+\section{Conclusion}
+\vspace{-0.2cm}
+\input{tex/conclusion}
+
+
+\nocite{*}
+\bibliographystyle{plainnat}
+\bibliography{bib/bib}
+
+
+\section{Appendix}
+\input{tex/appendix}
+
+\end{document}

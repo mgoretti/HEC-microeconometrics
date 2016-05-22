@@ -1,0 +1,16 @@
+The original dataset contained 37'317 persons, after transforming it to long format, 410'487 observations where observed which were reduced to 100'600 after removing missing informations (most of the persons did not participate through the whole study.
+
+Figure \ref{fig:obesity} shows the positive correlation between level of depression and obesity while figure \ref{fig:cesd} shows the symmetry of the behaviour (people at both sides of body weight problems have a higher level of depression).
+
+Figure \ref{fig:agecesd} shows that depression seems stationary with respect to the age while figure \ref{fig:agebmi} shows a decreasing trend in the bmi as people grow older.
+
+It is also worth noticing the upward trend in weight as times passes (more recent wave) from figure \ref{fig:wavebmi} and the absence of obvious trend in the evolution of depression from figure \ref{fig:wavecesd}.
+
+\subsection{Pooled OLS}
+The pooled OLS method was chosen, disregarding the possible advantages of using a better multi-dimensional analysis method, such as as using fixed effect panel data.
+
+This decision was motived by 2 reasons:
+\begin{itemize}
+\item Many relevant unobserved variables, such as diet, local cuisine, stress and work situation were not going to stay constant through the period as so the observation for one person should not be considered as strongly linked as fixed effects does.
+\item BMI changes slowly, thus making a great part of observations constant which removes a great number of subjects that never changed their obesity nor depression situation.
+\end{itemize}

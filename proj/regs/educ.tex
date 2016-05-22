@@ -1,0 +1,26 @@
+{
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\begin{tabular}{l*{3}{c}}
+\hline\hline
+                    &\multicolumn{1}{c}{(1)}&\multicolumn{1}{c}{(2)}&\multicolumn{1}{c}{(3)}\\
+                    &\multicolumn{1}{c}{\shortstack{obese\\reg}}&\multicolumn{1}{c}{\shortstack{obese\\ivreg}}&\multicolumn{1}{c}{\shortstack{obese\\ivprobit marginal}}\\
+\hline
+raeduc==2           &    0.000891         &      0.0104         &     0.00733         \\
+                    &    (0.0154)         &    (0.0156)         &    (0.0141)         \\
+[1em]
+raeduc==3           &     -0.0196\sym{*}  &   -0.000817         &    -0.00283         \\
+                    &   (0.00865)         &   (0.00973)         &   (0.00916)         \\
+[1em]
+raeduc==4           &     -0.0452\sym{***}&     -0.0240\sym{*}  &     -0.0267\sym{**} \\
+                    &   (0.00920)         &    (0.0105)         &    (0.0100)         \\
+[1em]
+raeduc==5           &      -0.124\sym{***}&     -0.0974\sym{***}&      -0.101\sym{***}\\
+                    &   (0.00906)         &    (0.0113)         &    (0.0116)         \\
+\hline
+Observations        &      100600         &      100600         &      100600         \\
+Other variables ommitted&         Yes         &         Yes         &         Yes         \\
+\hline\hline
+\multicolumn{4}{l}{\footnotesize \footnotesize Standard errors clustered by id in parentheses}\\
+\multicolumn{4}{l}{\footnotesize \footnotesize \sym{*} \(p<0.05\), \sym{**} \(p<0.01\), \sym{***} \(p<0.001\)}\\
+\end{tabular}
+}

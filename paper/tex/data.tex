@@ -1,0 +1,33 @@
+% !TEX encoding = UTF-8 Unicode
+
+\subsection{Source}
+The study has been conducted on the Health and Retirement Study\footnote{\url{http://hrsonline.isr.umich.edu/}} database which consists of a panel of approximatively 20'000 US residents over the age of 50 that are surveyed every 2 years (currently 11 waves of which the last 10 are used). 
+
+\subsection{Raw data transformation}
+The wide-form panel was transformed into a long form and those observations were considered as separate (clustered by individual and controlled for the wave number to take into account the increase of obesity over time).
+
+All observations with missing variables were dropped (resulting in 100'600 observations left).
+ 
+Dummies for weight problems ($ \text{BMI} < 18.5 | \text{BMI} > 25$), overweight ($\text{BMI} > 25$), obese ($\text{BMI} > 30$) and morbidly obese ($\text{BMI} > 40$) were created.
+
+\subsection{Depression Score}
+
+The intensity of depression is measured using the CESD (Center for Epidemiologic Studies Depression) scale which asks 6 negative and 2 positive questions and sums the scores (1 if yes to a negative question or no to a positive question) yielding a score that goes from 0 (least depressed) to 8 (most depressed).
+
+\subsection{Choice of Instrument}
+Given the endogenous relationship between obesity and depression, an instrument for depression had to be found. The chosen one was the depression of the spouse which is highly correlated with the individual depression and, as it can be seen in table \ref{tab:dep}, less correlated with obesity. We argue that most of the correlation is through the subject's depression (the spouse is depressed because the partner is depressed, not because he/she is fat). Thus leading to an exogenous instrument.
+
+\begin{table}[H]
+\begin{center}
+      \begin{tabular}{l | ccc}
+                   & obese & CESD self  & CESD spouse \\ \hline
+      obese &  1  & & \\
+      CESD self & 0.0755  & 1 & \\
+      CESD spouse &  0.0430 &  0.2245 & 1 \\
+      \end{tabular}
+            \caption{Correlations between obesity and depressions on the CESD scale}
+      \label{tab:dep}
+      \end{center}
+\end{table}
+
+Another instrument was needed for the interaction effect between gender and depression and was constructed by multiplying the spouse depression score by the gender dummy.

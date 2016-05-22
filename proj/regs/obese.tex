@@ -1,0 +1,39 @@
+{
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\begin{tabular}{l*{3}{c}}
+\hline\hline
+                    &\multicolumn{1}{c}{(1)}&\multicolumn{1}{c}{(2)}&\multicolumn{1}{c}{(3)}\\
+                    &\multicolumn{1}{c}{\shortstack{obese\\reg}}&\multicolumn{1}{c}{\shortstack{obese\\ivreg}}&\multicolumn{1}{c}{\shortstack{obese\\ivprobit marginal}}\\
+\hline
+CESD depression score&      0.0185\sym{***}&      0.0555\sym{***}&      0.0497\sym{***}\\
+                    &   (0.00168)         &   (0.00794)         &   (0.00683)         \\
+[1em]
+Male x CESD         &    -0.00653\sym{*}  &     -0.0317\sym{**} &     -0.0289\sym{**} \\
+                    &   (0.00259)         &    (0.0111)         &    (0.0103)         \\
+[1em]
+Male                &      0.0336\sym{***}&      0.0688\sym{***}&      0.0636\sym{***}\\
+                    &   (0.00781)         &    (0.0145)         &    (0.0137)         \\
+[1em]
+has smoked          &      -0.150\sym{***}&      -0.166\sym{***}&      -0.167\sym{***}\\
+                    &   (0.00995)         &    (0.0106)         &    (0.0113)         \\
+[1em]
+Spouse has smoked   &      0.0124         &     0.00629         &     0.00580         \\
+                    &   (0.00790)         &   (0.00799)         &   (0.00763)         \\
+[1em]
+Male x has smoked   &      0.0123         &      0.0286\sym{*}  &      0.0301         \\
+                    &    (0.0134)         &    (0.0145)         &    (0.0157)         \\
+[1em]
+Age                 &    -0.00720\sym{***}&    -0.00706\sym{***}&    -0.00687\sym{***}\\
+                    &  (0.000497)         &  (0.000498)         &  (0.000479)         \\
+[1em]
+Spouse's Age        &   -0.000264         &   -0.000291         &   -0.000445         \\
+                    &  (0.000493)         &  (0.000495)         &  (0.000473)         \\
+\hline
+Observations        &      100600         &      100600         &      100600         \\
+Education Control   &         Yes         &         Yes         &         Yes         \\
+Wave Control        &         Yes         &         Yes         &         Yes         \\
+\hline\hline
+\multicolumn{4}{l}{\footnotesize \footnotesize Standard errors clustered by id in parentheses}\\
+\multicolumn{4}{l}{\footnotesize \footnotesize \sym{*} \(p<0.05\), \sym{**} \(p<0.01\), \sym{***} \(p<0.001\)}\\
+\end{tabular}
+}

@@ -1,0 +1,16 @@
+{
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\begin{tabular}{l*{2}{c}}
+\hline\hline
+                    &\multicolumn{1}{c}{(1)}&\multicolumn{1}{c}{(2)}\\
+                    &\multicolumn{1}{c}{\shortstack{obese\\reg}}&\multicolumn{1}{c}{\shortstack{obese\\ivreg}}\\
+\hline
+CESD depression score&      0.0189\sym{***}&      0.0480\sym{***}\\
+                    &   (0.00132)         &   (0.00578)         \\
+\hline
+Observations        &      100600         &      100600         \\
+\hline\hline
+\multicolumn{3}{l}{\footnotesize \footnotesize Standard errors clustered by id in parentheses}\\
+\multicolumn{3}{l}{\footnotesize \footnotesize \sym{*} \(p<0.05\), \sym{**} \(p<0.01\), \sym{***} \(p<0.001\)}\\
+\end{tabular}
+}

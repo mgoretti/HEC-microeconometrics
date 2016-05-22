@@ -1,0 +1,43 @@
+\begin{thebibliography}{5}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Dave et~al.(2011)Dave, Tennant, and Colman]{dave}
+Dhaval~M. Dave, Jennifer Tennant, and Gregory~J. Colman.
+\newblock Isolating the effect of major depression on obesity: Role of
+  selection bias.
+\newblock \emph{NBER Working Paper}, 2011.
+
+\bibitem[Luppino et~al.(2010)Luppino, de~Wit, Bouvy, Stijnen, Cuijpers,
+  Penninx, and Frans G.~Zitman]{luppino}
+Floriana~S. Luppino, Leonore~M. de~Wit, Paul~F. Bouvy, Theo Stijnen, Pim
+  Cuijpers, Brenda W. J.~H. Penninx, and MD~Frans G.~Zitman.
+\newblock Overweight, obesity, and depression: A systematic review and
+  meta-analysis of longitudinal studies.
+\newblock \emph{Arch Gen Psychiatry}, 2010.
+
+\bibitem[Markowitz et~al.(2008)Markowitz, Friedman, and Arent]{markowitz}
+Sarah Markowitz, Michael~A. Friedman, and Shawn~M. Arent.
+\newblock Understanding the relation between obesity and depression: Causal
+  mechanisms and implications for treatment.
+\newblock \emph{CLINICAL PSYCHOLOGY: SCIENCE AND PRACTICE}, 15, 2008.
+
+\bibitem[Setiawan et~al.(2015)Setiawan, Wilson, Mizrahi, Rusjan, Miler,
+  Rajkowska, Suridjan, Kennedy, Rekkas, Houle, and Meyer]{neuro}
+Elaine Setiawan, Alan~A. Wilson, Romina Mizrahi, Pablo~M. Rusjan, Laura Miler,
+  Grazyna Rajkowska, Ivonne Suridjan, James~L. Kennedy, P.~Vivien Rekkas,
+  Sylvain Houle, and Jeffrey~H. Meyer.
+\newblock Role of translocator protein density, a marker of neuroinflammation,
+  in the brain during major depressive episodes.
+\newblock \emph{JAMA Psychiatry}, 2015.
+
+\bibitem[Silverstein(2002)]{silver}
+Brett Silverstein.
+\newblock Gender differences in the prevalence of somatic versus pure
+  depression: A replication.
+\newblock \emph{The American Journa of Psychiatry}, 2002.
+
+\end{thebibliography}
